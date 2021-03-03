@@ -1,0 +1,208 @@
+<!doctype html>
+<html lang="en">
+    <head>
+        <meta charset="utf-8">
+        <title>Ross Conover &mdash; Designer | Developer</title>
+        <meta name="viewport" content="width=device-width, initial-scale=1">
+        <link rel="preconnect" href="https://fonts.gstatic.com">
+        <link href="https://fonts.googleapis.com/css2?family=Rubik:wght@400;500&display=swap" rel="stylesheet">
+        <link href="https://fonts.googleapis.com/css2?family=Share+Tech+Mono&display=swap" rel="stylesheet">
+        <link rel="stylesheet" href="CSS/fonts.css">
+        <link rel="stylesheet" href="CSS/animations.css">
+        <link rel="stylesheet" href="CSS/carousel.css">
+        <link rel="stylesheet" href="CSS/styles.css">
+    </head>
+    <body data-status="hero">
+        <div id='background' aria-hidden='true'>
+            <div class="scan-lines back-effect" aria-hidden='true'>
+                <div id='static-effect'><!-- --></div>
+                <div id='noise-effect'><!-- --></div>
+                <hr/>
+                <hr/>
+            </div>
+        </div>
+        <div class='content'>
+            <nav class='top-nav'>
+                <div class='left'><!-- --></div>
+                <div class='right'>
+                    <ul class='hero-list' data-status='active'>
+                        <li class='about-link'><a href="#about">About</a></li>
+                        <li class='projects-link'><a href="#projects">Projects</a></li>
+                        <li class='skillset-link'><a href="#skillset">Skillset</a></li>
+                        <li class='contact-link'><a href="#contact">Contact</a></li>
+                    </ul>
+                    <ul class='body-list'>
+                        <li class='top-link'><a href='#'>Back to Top</a></li>
+                    </ul>
+                </div>
+            </nav>
+            <nav class='side-nav' data-showing='no'>
+                <ul>
+                    <li class='about-link' value='about'><a href="#about">About</a></li>
+                    <li class='projects-link' value='projects'><a href="#projects">Projects</a></li>
+                    <li class='skillset-link' value='skillset'><a href="#skillset">Skillset</a></li>
+                    <li class='contact-link' value='contact'><a href="#contact">Contact</a></li>
+                </ul>
+            </nav>
+
+                <section class='hero'>
+                    <div class='hero-logo'>
+                        <img class='red-logo' src='MEDIA/LogoRed.svg'/>
+                        <img class='blue-logo' src='MEDIA/LogoBlue.svg'/>
+                        <img class='green-logo' src='MEDIA/LogoGreen.svg'/>
+                        <img alt='Ross Conover Logo' class='white-logo' src='MEDIA/LogoWhite.svg'/>
+                    </div>
+                    <h1 class='screen-reader-only'>Ross Conover</h1>
+                    <h2>Designer <span>&times;</span> Developer</h2>
+                    <a href='#about'><div class='scroll-arrow' style='transform: rotate(45deg)'><!-- --></div></a>
+                </section>
+
+                <section id='about' class='split'>
+                    <div class='left'>
+                        <div class='img-placeholder'><!-- --></div>
+                    </div>
+                    <div class='right'>
+                        <h2>ABOUT</h2>
+                        <p>Lorem ipsum dolor sit amet, consectetur adipi*cing elit. Vestibulum posuere*sapien purus. Nam eros ligula, pretium ac turpis nec, pulvinar sagittis ipsum. Quisque condimentum eget ante sit amet pellentesque. Nam pellentesque elit ligula. Mauris eu ligula leo. Sed rutrum non risus et aliquam. Sed ultricies ultrices posuere. Nam suscipit, lorem ac interdum maximus, lorem.</p>
+                        <p>Aenean eget mi condimentum, pellentesque tellus nec, elementum odio. Curabitur suscipit hendrerit fringilla. Phasellus volutpat est imperdiet, lobortis mauris eget, congue nisi. Proin viverra, est ut laoreet elementum, nisi nunc volutpat elit, vitae aliquam purus velit in sem. Nulla facilisi. Praesent a libero tincidunt, semper ipsum eu, aliquam quam.</p>
+                        <a href='#'>Read how I made the effects on this site</a>
+                    </div>
+                </section>
+
+                <section id='projects'>
+                    <div class='carousel-wrapper'>
+                    <div class='carousel-content'>
+                        <div class='projects-links'>
+                            <h2>PROJECTS</h2>
+                            <ul class='projects-list'>
+                                <li data-value='krill-meat'><button><img src='MEDIA/WORK/krillmeat-work.svg'/></button></li>
+                                <li data-value='absorb'><button><img src='MEDIA/WORK/absorb-work.svg'/></button></li>
+                                <li data-value='remix'><button><img src='MEDIA/WORK/remix-work.svg'/></button></li>
+                                <li data-value='servello'><button><img src='MEDIA/WORK/servello-work.svg'/></button></li>
+                                <li data-value='attagirl'><button><img src='MEDIA/WORK/attagirl-work.svg'/></button></li>
+                                <li data-value=''></li>
+                            </ul>
+                        </div>
+                    
+                        <div class="project-process">
+                            <div class='process' value='krill-meat' data-status='active'>
+                                <div class='left'>
+                                    <button class='project-return'>Back to Projects</button>
+                                    <img src='MEDIA/WORK/krillmeat-process-main.svg'/>
+                                    <ul>
+                                        <li>Branding</li>
+                                        <li>e-Commerce</li>
+                                        <li>Website</li>
+                                        <li>Illustration</li>
+                                        <li>Personal</li>
+                                        <li><a href='#'>Visit Website</a></li>
+                                    </ul>
+                                </div>
+                                <div class='right'>
+                                    <h3>KRILL MEAT</h3>
+                                    <p>Krill Meat is a personal brand I have been building over the past few years. I have been doodling in the margins for years, gathering sketchbooks, notepads, and lots of post its. When coworkers started asking for the illustrations I had on my desk, I decided to move forward with the idea of promoting, branding, and selling my work.</p>
+                                    <p>Krill Meat embodies funny, simple, sometimes jarring, often uncomfortable, consistently messy illustrations. I wanted to make sure the website worked not only as an online store, but also a portfolio to showcase my work, so the art is front-and-center.</p>
+                                    <h4>Code</h4>
+                                    <p>For this site, I wanted to use some kind of subtle animation techniques to create a sense of unease with the illustrations. To do that, I needed to keep all of the SVG files seperated and inline, so I could manipulate various pieces. To do this without cluttering up the HTML, I pulled all of the svg data into a JS object as Strings, and used JS to inject them into the page. From there, it's simple CSS Animations to create the effects.</p>
+                                    <p>Beyond the SVG management, I also wanted to include a simple swiping carousel on mobile. I built a custom JS plugin that integrated with the overall page manager to control the effect on mobile.</p>
+                                    <a class='github' href='https://github.com/terrorsaurusrex/krill_meat'>Github Repo</a>
+                                </div>
+                            </div>
+                            <div class='process' value='absorb' data-status='inactive'>
+                                <div class='left'>
+                                    <button class='project-return'>Back to Projects</button>
+                                    <img src='MEDIA/WORK/absorb-process-main.png'/>
+                                    <ul>
+                                        <li>Branding</li>
+                                        <li>Event</li>
+                                        <li>Website</li>
+                                        <li>Collateral</li>
+                                        <li><a href='#'>Visit Website</a></li>
+                                    </ul>
+                                </div>
+                                <div class='right'>
+                                    <h3>ABSORB</h3>
+                                    <p>The Walker Insights series is an annual conference, held in [INSERT SOME DATA] and covers a variety of design topics. Each year, a selection of designers are picked to speak about their work and process, and answer some questions from the audience. ABSORB is a hypothetical 2021 conference, created by gathering three existing lectures from earlier years and tieing them up into one cohesive concept.</p>
+                                    <p>The challenge was to discover a connecting theme between the three lectures, all held in three unique years, and put them together in a believable way. The concept of ABSORB came from talking points found in all three lectures. From there, the goal was to create a cohesive brand for that theme, and use that brand to create advertising, collateral, and presentation resources.</p>
+                                    <h4>Sub Title</h4>
+                                    <p>Lorem ipsum dolor sit amet, consectetur adipiscing elit. Vivamus vel eros purus. Morbi tristique leo quis enim suscipit, non gravida est eleifend. Duis auctor orci et dictum fermentum. Aliquam at nibh at massa sagittis placerat eu commodo ante. Integer gravida fringilla nibh, vel gravida lorem condimentum hendrerit. Mauris scelerisque, turpis in vestibulum egestas, massa eros mattis quam.</p>
+                                </div>
+                            </div>
+                            <div class='process' value='remix' data-status='inactive'>
+                                <div class='left'>
+                                    <button class='project-return'>Back to Projects</button>
+                                    <img src=''/>
+                                    <ul>
+                                        <li>Exhibition</li>
+                                        <li>Collateral</li>
+                                        <li>Website</li>
+                                        <li><a href='#'>Visit Website</a></li>
+                                    </ul>
+                                </div>
+                                <div class='right'>
+                                    <h3>REMIX</h3>
+                                    <p>Lorem ipsum dolor sit amet, consectetur adipiscing elit. Vivamus vel eros purus. Morbi tristique leo quis enim suscipit, non gravida est eleifend. Duis auctor orci et dictum fermentum. Aliquam at nibh at massa sagittis placerat eu commodo ante. Integer gravida fringilla nibh, vel gravida lorem condimentum hendrerit. Mauris scelerisque, turpis in vestibulum egestas, massa eros mattis quam, sit amet accumsan turpis velit a mi. </p>
+                                    <p>Nullam ornare ac diam nec facilisis. Lorem ipsum dolor sit amet, consectetur adipiscing elit. Curabitur facilisis arcu id ex facilisis facilisis. Donec ac viverra dolor. Duis commodo metus massa, in ultricies nunc hendrerit sed. Sed pulvinar rutrum massa, non accumsan ante malesuada quis. Morbi sed massa bibendum, pellentesque lorem non, fermentum mi. Proin eu ligula at lectus rhoncus aliquet.</p>
+                                    <h4>Sub Title</h4>
+                                    <p>Lorem ipsum dolor sit amet, consectetur adipiscing elit. Vivamus vel eros purus. Morbi tristique leo quis enim suscipit, non gravida est eleifend. Duis auctor orci et dictum fermentum. Aliquam at nibh at massa sagittis placerat eu commodo ante. Integer gravida fringilla nibh, vel gravida lorem condimentum hendrerit. Mauris scelerisque, turpis in vestibulum egestas, massa eros mattis quam.</p>
+                                </div>
+                            </div>
+                            <div class='process' value='servello' data-status='inactive'>
+                                <div class='left'>
+                                    <button class='project-return'>Back to Projects</button>
+                                    <img src=''/>
+                                    <ul>
+                                        <li>Branding</li>
+                                        <li>e-Commerce</li>
+                                        <li>Website</li>
+                                        <li><a href='#'>Visit Website</a></li>
+                                    </ul>
+                                </div>
+                                <div class='right'>
+                                    <h3>SERVELLO</h3>
+                                    <p>Servello is a skin care brand that focuses on natural, organic products. The company’s inception came from the memories of home remedies in an old, Italian kitchen. To echo the emotion of memory, while keeping things feeling natural, the direction the brand took was delicate and pristine, without losing the warmth of nostalgia.</p>
+                                    <p>Servello may be a small company, selling organic and natural products, but the owner’s background in biology sets it on a higher level than the others in its field. Servello focuses on keeping you looking and feeling good, without the lasting damages that may come with other skin care products, all while staying smart and natural</p>
+                                    <h4>Sub Title</h4>
+                                    <p>Lorem ipsum dolor sit amet, consectetur adipiscing elit. Vivamus vel eros purus. Morbi tristique leo quis enim suscipit, non gravida est eleifend. Duis auctor orci et dictum fermentum. Aliquam at nibh at massa sagittis placerat eu commodo ante. Integer gravida fringilla nibh, vel gravida lorem condimentum hendrerit. Mauris scelerisque, turpis in vestibulum egestas, massa eros mattis quam.</p>
+                                </div>
+                            </div>
+                            <div class='process' value='attagirl' data-status='inactive'>
+                                <div class='left'>
+                                    <button class='project-return'>Back to Projects</button>
+                                    <img src='MEDIA/WORK/attagirl-process-main.png'/>
+                                    <ul>
+                                        <li>Branding</li>
+                                        <li>Restaurant</li>
+                                        <li>Illustration</li>
+                                        <li>Website</li>
+                                        <li><a href='#'>Visit Website</a></li>
+                                    </ul>
+                                </div>
+                                <div class='right'>
+                                    <h3>ATTAGIRL</h3>
+                                    <p>Cullum's Attagirl is a fried chicken and beer restaurant located near the N St. Mary Strip in San Antonio. The area is known for its bars, restaurants, and murals, and has cultivated a trendy but down-to-earth attitude over the last few years.</p>
+                                    <p>The Attagirl restaurant and its atmosphere have a sarcastic attitude. They have a strong voice with their menu, and they know what they are. But while the restaurant and food feel like a great fit, the branding feels left out. The goal was to update the Attagirl brand to better match their overall tone, as well as freshen things up to keep up with competitors in a quickly-growing "fancy fast food" industry.</p>
+                                </div>
+                            </div>
+                        </div>
+                    </div>
+                    </div> <!-- Carousel Wrapper -->
+                    
+                </section>
+
+                <section id='skillset'>
+                    <h2>SKILLSET</h2>
+                </section>
+                <section id='contact'>
+                    <h2>CONTACT</h2>
+                    <p>Leave me alone, actually...</p>
+                </section>
+                <footer><p>&copy;<span class='copy-year'>0000</span> &mdash; Ross Conover</p></footer>
+        </div>
+
+        <script type='text/javascript' src='JS/scripts.js'></script>
+        <script type='text/javascript' src='JS/CopyYear.js'></script>
+        <script type='text/javascript' src='JS/NavWaypoints.js'></script>
+        <script type='text/javascript' src='JS/ProjectManager.js'></script>
+    </body>
+</html>

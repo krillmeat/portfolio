@@ -1,0 +1,21 @@
+name: FTP-Deploy
+
+#Run this workflow on Push
+on: push
+
+jobs:
+  ftp-deploy:
+    name: Deploy Code through FTP
+    runs-on: windows-latest
+
+    steps:
+      - name: Get latest code
+        uses: actions/checkout@v2.3.2
+
+      - name: FTP Deploy
+        uses: SamKirkland/FTP-Deploy-Action@4.0.0
+        with:
+          server: ftp.rossdanielconover.com
+          username: ${{ secrets.ftp_username }}
+          password: ${{ secrets.ftp_password }}
+          server-dir: /public_html/

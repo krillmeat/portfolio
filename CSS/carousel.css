@@ -1,0 +1,19 @@
+/* SET THESE UP TO BE DYANMIC THROUGH JS */
+
+.carousel-wrapper{
+    width: 100%;
+    height: 100%;
+    overflow: hidden;
+}
+
+.carousel-wrapper .carousel-content{
+    display: flex;
+    width: 200%;
+    height: 100%;
+
+    transition: transform .2s linear;
+}
+
+.carousel-wrapper .carousel-content > div{
+    width: 50%;
+}
