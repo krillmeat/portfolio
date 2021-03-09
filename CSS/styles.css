@@ -757,6 +757,17 @@ body[data-status='project-view'] #projects .carousel-content{
   border-top: 1px solid #FFF;
 }
 
+/* CODE BLOCK */
+#projects .project-process .right .code-block{
+  max-width: 800px;
+  border: 1px solid #FFF;
+  margin-top: 32px;
+  padding: 32px;
+
+  font-size: 1.5em;
+}
+
+
 /* WORK SPECIFIC */
 #projects .project-process .right .rubik{
   position: relative;
@@ -777,6 +788,7 @@ body[data-status='project-view'] #projects .carousel-content{
 
 #projects .project-process .right .rubik.medium{
   margin-top: 0px;
+  margin-bottom: 40px;
   font-weight: 500;
   font-size: 3em;
 }
@@ -790,6 +802,11 @@ body[data-status='project-view'] #projects .carousel-content{
   height: calc(100% + .65em);
   border: 1px solid #FFF;
 }
+
+#projects .project-process .process[value='attagirl'] ul.color-swatches li:first-of-type .color-block{ background: #F2C2CF }
+#projects .project-process .process[value='attagirl'] ul.color-swatches li:nth-of-type(2) .color-block{ background: #F25C84 }
+#projects .project-process .process[value='attagirl'] ul.color-swatches li:nth-of-type(3) .color-block{ background: #AF0000 }
+#projects .project-process .process[value='attagirl'] ul.color-swatches li:nth-of-type(4) .color-block{ background: #010440 }
 
 /*:::::::::::::::::::::::::::::::::::::::::::::::::::::::::::::::::::::::::::::::::::::::::::::::::::::::::::::::
 ::::::::::::::::::::                                                                         ::::::::::::::::::::
