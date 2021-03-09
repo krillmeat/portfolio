@@ -500,7 +500,7 @@ body[data-status='project-view'] #projects .carousel-content{
 
 #projects ul.projects-list li[data-value='krill-meat'] button:hover::after{ content: 'Krill Meat' }
 #projects ul.projects-list li[data-value='absorb'] button:hover::after{ content: 'Absorb' }
-#projects ul.projects-list li[data-value='remix'] button:hover::after{ content: 'Remix' }
+#projects ul.projects-list li[data-value='remix'] button:hover::after{ content: 'Impact' }
 #projects ul.projects-list li[data-value='servello'] button:hover::after{ content: 'Servello' }
 #projects ul.projects-list li[data-value='attagirl'] button:hover::after{ content: 'Attagirl' }
 
@@ -689,6 +689,106 @@ body[data-status='project-view'] #projects .carousel-content{
   margin-top: 16px;
   font-size: 1.75em;
   color: #FFF;
+}
+
+#projects .project-process .right ul.color-swatches{
+  display: flex;
+  margin-top: 32px;
+  max-width: 800px;
+}
+
+#projects .project-process .right ul.color-swatches li{
+  border: 4px solid #FFF;
+  width: calc(25% - 16px);
+  margin-right: 16px;
+}
+
+#projects .project-process .right ul.color-swatches li .color-block{
+  width: calc(100% - 16px);
+  padding-top: 100%;
+  margin: 8px;
+  background: green;
+}
+
+#projects .project-process .right ul.color-swatches li p{
+  text-transform: uppercase;
+  width: 100%;
+  background: #FFF;
+  color: #111;
+  text-align: center;
+  padding: 8px;
+  margin-top: 0px;
+  font-size: 2em;
+}
+
+#projects .project-process .right ul.color-swatches li p span{
+  width: 100%;
+  display: block;
+}
+
+#projects .project-process .right ul.color-swatches li p .name{
+  font-size: .8em;
+}
+
+#projects .project-process .right .wireframe-wrap{
+  display: flex;
+  width: 100%;
+  margin-top: 32px;
+  max-width: 800px;
+}
+
+#projects .project-process .right .wireframe-wrap.mobile img{
+  width: 33.3333333%;
+}
+
+#projects .project-process .right h4{ 
+  position: relative;
+}
+
+#projects .project-process .right h4.type{ display: inline-block }
+
+#projects .project-process .right h4.type::after{
+  content: '';
+  position: absolute;
+  top: 21px; right: -100px;
+  width: 80px;
+  height: 42px;
+  border-right: 1px solid #FFF;
+  border-top: 1px solid #FFF;
+}
+
+/* WORK SPECIFIC */
+#projects .project-process .right .rubik{
+  position: relative;
+  font-family: 'Rubik', sans-serif;
+  line-height: 1;
+}
+
+#projects .project-process .right h4.type + p{
+  position: relative;
+  display: block;
+}
+
+#projects .project-process .right .rubik.black{
+  font-size: 8em;
+  font-weight: 900;
+  margin-top: 32px;
+}
+
+#projects .project-process .right .rubik.medium{
+  margin-top: 0px;
+  font-weight: 500;
+  font-size: 3em;
+}
+
+#projects .project-process .right h4.type + p::before{
+  position: absolute;
+  content: '';
+  top: -8px;
+  left: -16px;
+  width: 75%;
+  height: calc(100% + .65em);
+  border: 1px solid #FFF;
 }
 
 /*:::::::::::::::::::::::::::::::::::::::::::::::::::::::::::::::::::::::::::::::::::::::::::::::::::::::::::::::
