@@ -616,7 +616,7 @@ body[data-status='project-view'] #projects .carousel-content{
     margin-top: 8px;
 }
 
-#projects .project-process .process .left ul li:last-of-type{
+#projects .project-process .process .left ul li:nth-last-child(-n+2){
     width: 100%;
     margin-top: 16px;
 }
@@ -630,11 +630,11 @@ body[data-status='project-view'] #projects .carousel-content{
 }
 
 #projects .project-process .process .left ul li:first-of-type::before,
-#projects .project-process .process .left ul li:last-of-type::before{
+#projects .project-process .process .left ul li:nth-last-child(-n+2)::before{
     content: '';
 }
 
-#projects .project-process .process .left ul li:last-of-type a{
+#projects .project-process .process .left ul li:nth-last-child(-n+2) a{
     color: #FFF;
 }
 
@@ -759,12 +759,24 @@ body[data-status='project-view'] #projects .carousel-content{
 
 /* CODE BLOCK */
 #projects .project-process .right .code-block{
+  position: relative;
   max-width: 800px;
   border: 1px solid #FFF;
   margin-top: 32px;
-  padding: 32px;
+  padding: 48px 32px 32px 32px;
 
   font-size: 1.5em;
+}
+
+#projects .project-process .right .code-block[data-type='css']::before{
+  content: 'CSS';
+  position: absolute;
+  top: 0px;
+  left: 0px;
+  background: #FFF;
+  color: #111;
+  text-transform: uppercase;
+  padding: 4px 8px;
 }
 
 
@@ -807,6 +819,9 @@ body[data-status='project-view'] #projects .carousel-content{
 #projects .project-process .process[value='attagirl'] ul.color-swatches li:nth-of-type(2) .color-block{ background: #F25C84 }
 #projects .project-process .process[value='attagirl'] ul.color-swatches li:nth-of-type(3) .color-block{ background: #AF0000 }
 #projects .project-process .process[value='attagirl'] ul.color-swatches li:nth-of-type(4) .color-block{ background: #010440 }
+
+#projects .project-process .process[value='absorb'] ul.color-swatches li:first-of-type .color-block{ background: #060606 }
+#projects .project-process .process[value='absorb'] ul.color-swatches li:nth-of-type(2) .color-block{ background: #D9D8D3 }
 
 /*:::::::::::::::::::::::::::::::::::::::::::::::::::::::::::::::::::::::::::::::::::::::::::::::::::::::::::::::
 ::::::::::::::::::::                                                                         ::::::::::::::::::::
