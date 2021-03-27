@@ -293,7 +293,7 @@ nav.side-nav ul li[data-status='active'] a::after{
     display: block;
 }
 
-@media (max-width: 750px){
+@media (max-width: 800px){
   nav.side-nav{ display: none !important }
 }
 
@@ -392,14 +392,13 @@ section:not(.hero) h2{
     position: relative;
     margin-bottom: 16px;
 
-    font-size: 9em;
+    font-size: 6em;
     letter-spacing: -5px;
     text-shadow: 1px 1px 0  red, -1px -1px 0  green, 1px -1px 0  blue;
 }
 
 section:not(.hero) p{
-    font-size: 1.8em;
-    padding-left: 4px;
+    font-size: 1.5em;
     line-height: 1.4;
     max-width: 650px;
 }
@@ -414,7 +413,7 @@ section.split{
 }
 section.split .right{
     width: 100%;
-    padding-top: 175px;
+    padding-top: 32px;
 }
 section.split .left{
     width: 100%;
@@ -423,13 +422,24 @@ section.split .left{
 @media (min-width: 800px){
   section:not(.hero){
     padding: 80px;
-    padding-left: 28px;
+    padding-left: 280px;
+  }
+
+  section:not(.hero) h2{
+    font-size: 9em;
+  }
+
+  section:not(.hero) p{
+    padding-left: 4px;
+    font-size: 1.8em;
   }
 
   section.split .left,
   section.split .right{
     width: 50%;
   }
+
+  section.split .right{ padding-top: 175px }
 }
 
 /*:::::::::::::::::::::::::::::::::::::::::::::::::::::::::::::::::::::::::::::::::::::::::::::::::::::::::::::::
@@ -443,9 +453,8 @@ section.split .left{
 }
 
 #about .left .img-placeholder{
-    width: 50%;
+    width: 100%;
     height: 500px;
-    margin-left: 15%;
     border: 1px solid #FFF;
 }
 
@@ -472,8 +481,17 @@ section.split .left{
 #about a{
   display: inline-block;
   margin-top: 16px;
-  font-size: 1.75em;
+  font-size: 1.5em;
   color: #FFF;
+}
+
+@media (min-width: 800px){
+  #about .left .img-placeholder{
+    width: 50%;
+    margin-left: 15%;
+  }
+
+  #about a{ font-size: 1.75em }
 }
 
 /*:::::::::::::::::::::::::::::::::::::::::::::::::::::::::::::::::::::::::::::::::::::::::::::::::::::::::::::::
@@ -486,14 +504,15 @@ section.split .left{
 
 #projects{
     margin: 0 auto;
-    text-align: center;
+    text-align: left;
+    padding-top: 64px;
 }
 
 #projects ul.projects-list{
     display: flex;
     justify-content: space-between;
     flex-wrap: wrap;
-    padding-top: 32px;
+    padding-top: 8px;
     width: 100%;
     max-width: 1200px;
     margin: 0 auto;
@@ -501,7 +520,7 @@ section.split .left{
 
 #projects ul.projects-list li{
     position: relative;
-    width: calc(33.333333% - 48px);
+    width: calc(50% - 8px);
     margin-bottom: 8px;
 }
 
@@ -553,17 +572,35 @@ body[data-status='project-view'] #projects .carousel-content{
     z-index: 99;
 }
 
+@media (min-width: 800px){
+  #projects{
+    text-align: center;
+    padding-top: 80px;
+  }
+
+  #projects ul.projects-list{
+    padding-top: 32px;
+  }
+
+  #projects ul.projects-list li{
+    width: calc(33.333333% - 48px);
+  }
+}
+
 /*:::::::::::::::::::::::::::::::::::::::::::::::::::::::::::::::::::::::::::::::::::::::::::::::::::::::::::::::
 ::::::::::::::::::::                                                                         ::::::::::::::::::::
 ::::::::::::::::::::  PROCESS                                                                ::::::::::::::::::::
 ::::::::::::::::::::                                                                         ::::::::::::::::::::
 :::::::::::::::::::::::::::::::::::::::::::::::::::::::::::::::::::::::::::::::::::::::::::::::::::::::::::::::*/
 
+#projects .project-process{ padding-top: 64px }
+body[data-status='project-view'] #projects .project-process{ padding-top: 0px }
+
 #projects .project-process .process{
     display: flex;
+      flex-wrap: wrap;
     width: 100%;
     height: 100%;
-    padding-left: 48px;
 }
 
 #projects .project-process .process h3{
@@ -588,14 +625,24 @@ body[data-status='project-view'] #projects .carousel-content{
 
 #projects .project-process .process[data-status='inactive']{ display: none; }
 
+@media (min-width: 800px){
+  #projects .project-process{ padding-top: 0px }
+  #projects .project-process .process{ padding-left: 48px }
+}
+
 /*:::::::::::::::::::::::::::::::::::::::::::::::::::::::::::::::::::::::::::::::::::::::::::::::::::::::::::::::
 ::::::::::::::::::::  PROCESS - LEFT                                                         ::::::::::::::::::::
 :::::::::::::::::::::::::::::::::::::::::::::::::::::::::::::::::::::::::::::::::::::::::::::::::::::::::::::::*/
 
 #projects .project-process .process .left{
     position: relative;
-    width: 30%;
-    padding-right: 64px;
+    width: 100%;
+    padding-right: 0px;
+    padding-left: 16px;
+}
+
+body[data-status='project-view'] #projects .project-process .process .left{
+  padding-left: 0px;
 }
 
 #projects .project-process .process .left::before{
@@ -620,7 +667,7 @@ body[data-status='project-view'] #projects .carousel-content{
     letter-spacing: 1px;
     font-size: 1.5em;
     padding-left: 32px;
-    transform: translate(-32px);
+    transform: translate(0px);
 }
 
 #projects .project-process .process .left button::before{
@@ -683,8 +730,24 @@ body[data-status='project-view'] #projects .carousel-content{
 }
 
 #projects .project-process .process .left img{
+    width: 100%;
+}
+
+@media (min-width: 800px){
+  #projects .project-process .process .left{
+    width: 30%;
+    padding-right: 64px;
+    padding-left: 0px;
+  }
+
+  #projects .project-process .process .left button{
+    transform: translate(-32px);
+  }
+
+  #projects .project-process .process .left img{
     width: 80%;
     margin-left: 20%;
+  }
 }
 
 /*:::::::::::::::::::::::::::::::::::::::::::::::::::::::::::::::::::::::::::::::::::::::::::::::::::::::::::::::
@@ -693,8 +756,7 @@ body[data-status='project-view'] #projects .carousel-content{
 
 #projects .project-process .process .right{
     text-align: left;
-    width: 70%;
-    padding-left: 16px;
+    width: 100%;
 }
 
 #projects .project-process .right{
@@ -866,6 +928,13 @@ body[data-status='project-view'] #projects .carousel-content{
 
 #projects .project-process .process[value='absorb'] ul.color-swatches li:first-of-type .color-block{ background: #060606 }
 #projects .project-process .process[value='absorb'] ul.color-swatches li:nth-of-type(2) .color-block{ background: #D9D8D3 }
+
+@media (min-width: 800px ){
+  #projects .project-process .process .right{
+     width: 70%;
+     padding-left: 16px;
+  }
+}
 
 /*:::::::::::::::::::::::::::::::::::::::::::::::::::::::::::::::::::::::::::::::::::::::::::::::::::::::::::::::
 ::::::::::::::::::::                                                                         ::::::::::::::::::::

@@ -52,12 +52,6 @@ class ProjectManager{
                 if(document.querySelector(".project-process .process[data-status='active']")) document.querySelector(".project-process .process[data-status='active']").dataset.status = "inactive";
                 document.querySelector(`.project-process .process[value='${projectName}']`).dataset.status = "active";
                 document.querySelector(".project-process").style.height = ( window.innerHeight - 180 ) + "px";
-                
-                // iFrame goodness
-                let iFrameElem = currentProject.querySelector("iframe");
-                // let iFrameDocHeight = iFrameElem.contentWindow.document.body.offsetHeight; For upload
-                let iFrameDocHeight = 3000;
-                iFrameElem.setAttribute("height", iFrameDocHeight+"px");
 
             }, 500);
         }

@@ -15,7 +15,7 @@ function init(){
 
     addEvents();
     gatherNodes();
-    setupSections();
+    if(window.innerhHeight > 800 ) setupSections();
     // Set Interval
     var animations = setInterval(animationHandler, 100);
 }
