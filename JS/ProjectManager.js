@@ -51,7 +51,8 @@ class ProjectManager{
                 document.getElementsByTagName("body")[0].dataset.status = "project-view";
                 if(document.querySelector(".project-process .process[data-status='active']")) document.querySelector(".project-process .process[data-status='active']").dataset.status = "inactive";
                 document.querySelector(`.project-process .process[value='${projectName}']`).dataset.status = "active";
-                document.querySelector(".project-process").style.height = ( window.innerHeight - 180 ) + "px";
+                let dotcomMod = window.innerWidth <= 800 ? 64 : 180;
+                document.querySelector(".project-process").style.height = ( window.innerHeight - dotcomMod ) + "px";
 
             }, 500);
         }
