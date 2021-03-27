@@ -317,6 +317,7 @@ section.hero{
     justify-content: center;
   width: 100%;
   height: 100vh;
+  overflow: hidden; /* Needed to prevent X Scroll */
 }
 
 section.hero .hero-logo{
@@ -384,8 +385,7 @@ section.hero .scroll-arrow{
 
 
 section:not(.hero){
-    padding: 80px;
-    padding-left: 280px;
+    padding: 8px;
 }
 
 section:not(.hero) h2{
@@ -410,13 +410,26 @@ section:not(.hero) p + p{
 
 section.split{
     display: flex;
+      flex-wrap: wrap;
 }
 section.split .right{
-    width: 50%;
+    width: 100%;
     padding-top: 175px;
 }
 section.split .left{
+    width: 100%;
+}
+
+@media (min-width: 800px){
+  section:not(.hero){
+    padding: 80px;
+    padding-left: 28px;
+  }
+
+  section.split .left,
+  section.split .right{
     width: 50%;
+  }
 }
 
 /*:::::::::::::::::::::::::::::::::::::::::::::::::::::::::::::::::::::::::::::::::::::::::::::::::::::::::::::::
