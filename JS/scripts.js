@@ -15,7 +15,6 @@ function init(){
 
     addEvents();
     gatherNodes();
-    layoutHero();
     setupSections();
     // Set Interval
     var animations = setInterval(animationHandler, 100);
@@ -42,23 +41,6 @@ function gatherNodes(){
 
 function addEvents(){
     window.addEventListener("scroll",debounce(scrollHandler,50));
-}
-
-function layoutHero(){
-    setHeroHeight();
-    let heroLogoHeight = heroLogoElem.clientHeight;
-    let paddingHeight = (windowHeight - heroLogoHeight) / 2;
-
-    heroSectionElem.style.padding = `${ paddingHeight }px 0px`;
-}
-
-/**
-* SET HERO HEIGHT
-* ----------------------------------------------------------------------------------
-* Sets the height of the Hero to match the window height
-* --------------------------------------------------------------------------------*/
-function setHeroHeight(){
-    document.querySelector("section.hero").style.height = windowHeight+"px";
 }
 
 function setupSections(){
