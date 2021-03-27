@@ -17,8 +17,8 @@
     <body data-status="hero">
         <div id='background' aria-hidden='true'>
             <div class="scan-lines back-effect" aria-hidden='true'>
-                <div id='static-effect'><!-- --></div>
-                <div id='noise-effect'><!-- --></div>
+                <div id='static-effect'><div class='static' data-number='1' data-state='show'></div><div class='static' data-number='2' data-state='hide'></div><div class='static' data-number='3' data-state='hide'></div><div class='static' data-number='4' data-state='hide'></div><div class='static' data-number='5' data-state='hide'></div><div class='static' data-number='6' data-state='hide'></div></div>
+                <div id='noise-effect'><div class='noise' data-number='1' data-state='show'></div><div class='noise' data-number='2' data-state='hide'></div><div class='noise' data-number='3' data-state='hide'></div><div class='noise' data-number='4' data-state='hide' s></div><div class='noise' data-number='5' data-state='hide'></div></div>
                 <hr/>
                 <hr/>
             </div>
@@ -52,7 +52,10 @@
                         <img class='red-logo' src='MEDIA/LogoRed.svg'/>
                         <img class='blue-logo' src='MEDIA/LogoBlue.svg'/>
                         <img class='green-logo' src='MEDIA/LogoGreen.svg'/>
-                        <img alt='Ross Conover Logo' class='white-logo' src='MEDIA/LogoWhite.svg'/>
+                        <img alt='Ross Conover Logo' class='white-logo' data-state='show' src='MEDIA/LogoWhite.svg'/>
+                        <img alt='Ross Conover Logo' class='white-logo-offleft' data-state='hide' src='MEDIA/LogoWhiteOffleft.svg'/>
+                        <img alt='Ross Conover Logo' class='white-logo-offright' data-state='hide' src='MEDIA/LogoWhiteOffright.svg'/>
+                        <!-- <svg id='white-logo' version="1.1" id="Layer_1" xmlns="http://www.w3.org/2000/svg" xmlns:xlink="http://www.w3.org/1999/xlink" x="0px" y="0px" viewBox="0 0 3739.5 934" style="enable-background:new 0 0 3739.5 934;" xml:space="preserve"></svg> -->
                     </div>
                     <h1 class='screen-reader-only'>Ross Conover</h1>
                     <h2>Designer <span>&times;</span> Developer</h2>
@@ -263,6 +266,8 @@
                 </section>
                 <footer><p>&copy;<span class='copy-year'>0000</span> &mdash; Ross Conover</p></footer>
         </div>
+
+        <script type='text/javascript' src='JS/logo.svg.js'></script>
 
         <script type='text/javascript' src='JS/scripts.js'></script>
         <script type='text/javascript' src='JS/CopyYear.js'></script>

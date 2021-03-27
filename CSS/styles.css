@@ -72,15 +72,38 @@ body[data-status='project-view']{
     position: absolute;
     top: 0; left: 0;
     width: 100%; height: 100%;
-    opacity: .07;
+    opacity: .05;
 }
 
 #noise-effect{
     position: absolute;
     top: 0; left: 0;
     width: 100%; height: 100%;
-    opacity: .3;
+    opacity: .2;
 }
+
+#static-effect .static,
+#noise-effect .noise{
+  position: absolute;
+  top: 0; left: 0;
+  width: 100vw; height: 100vh;
+}
+
+#static-effect .static[data-state='hide'],#noise-effect .noise[data-state='hide']{ opacity: 0 }
+#static-effect .static[data-state='show'], #noise-effect .noise[data-state='show']{ opacity: 1 }
+
+#static-effect .static[data-number='1']{ background-image: url('../MEDIA/EFFECTS/static1.png') }
+#static-effect .static[data-number='2']{ background-image: url('../MEDIA/EFFECTS/static2.png') }
+#static-effect .static[data-number='3']{ background-image: url('../MEDIA/EFFECTS/static3.png') }
+#static-effect .static[data-number='4']{ background-image: url('../MEDIA/EFFECTS/static4.png') }
+#static-effect .static[data-number='5']{ background-image: url('../MEDIA/EFFECTS/static5.png') }
+#static-effect .static[data-number='6']{ background-image: url('../MEDIA/EFFECTS/static6.png') }
+
+#noise-effect .noise[data-number='1']{ background-image: url('../MEDIA/EFFECTS/dmg1.png') }
+#noise-effect .noise[data-number='2']{ background-image: url('../MEDIA/EFFECTS/dmg2.png') }
+#noise-effect .noise[data-number='3']{ background-image: url('../MEDIA/EFFECTS/dmg3.png') }
+#noise-effect .noise[data-number='4']{ background-image: url('../MEDIA/EFFECTS/dmg4.png') }
+#noise-effect .noise[data-number='5']{ background-image: url('../MEDIA/EFFECTS/dmg5.png') }
 
 #background > * { transition: opacity .5s linear }
 
@@ -311,6 +334,8 @@ nav.side-nav ul li[data-status='active'] a::after{
 :::::::::::::::::::::::::::::::::::::::::::::::::::::::::::::::::::::::::::::::::::::::::::::::::::::::::::::::::
 :::::::::::::::::::::::::::::::::::::::::::::::::::::::::::::::::::::::::::::::::::::::::::::::::::::::::::::::*/
 
+#white-logo{ fill: #FFF }
+
 section{
     position: relative;
     width: 100%;
@@ -340,7 +365,12 @@ section.hero .hero-logo img{
     width: 100%;
 }
 
-section.hero .hero-logo img:not(.white-logo){
+section.hero .hero-logo img[data-state='hide'] { opacity: 0 }
+section.hero .hero-logo img[data-state='show'] { opacity: 1 }
+
+section.hero .hero-logo img.red-logo,
+section.hero .hero-logo img.green-logo,
+section.hero .hero-logo img.blue-logo{
     opacity: .4;
 }
 

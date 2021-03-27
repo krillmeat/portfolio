@@ -94,8 +94,10 @@ function moveScanLine(line,delta){
 * @param {Node}    elem    The Node Element of the Static Elem
 * --------------------------------------------------------------------------------*/
 function handleStaticEffects(elem){
-    let rando = Math.floor(Math.random() * 6) + 1;
-    elem.style.backgroundImage = `url('MEDIA/EFFECTS/static${rando}.png')`;
+    let rando = Math.floor(Math.random() * 6);
+    let statics = elem.querySelectorAll(".static");
+    for(let i = 0; i < statics.length; i++){ statics[i].dataset.state = 'hide' }
+    statics[rando].dataset.state = 'show';
 }
 
 /**
@@ -107,11 +109,11 @@ function handleStaticEffects(elem){
 * --------------------------------------------------------------------------------*/
 function handleNoiseEffects(elem){
     let randoChance = Math.floor(Math.random() * 100);
+    let noises = elem.querySelectorAll(".noise");
+    for(let i = 0; i < noises.length; i++){ noises[i].dataset.state = 'hide' }
     if(randoChance <= 85){
-        let randoImg = Math.floor(Math.random() * 5) + 1;
-        elem.style.backgroundImage = `url('MEDIA/EFFECTS/dmg${randoImg}.png')`;
-    } else{
-        elem.style.backgroundImage = 'none';
+        let randoImg = Math.floor(Math.random() * 5);
+        noises[randoImg].dataset.state = 'show';
     }
 }
 
@@ -131,9 +133,12 @@ function handleLogoEffects(elem){
     modJitter(heroLogoElem.querySelector('.blue-logo'),2);
 
     if(randoOne % 40 == 0){
-        Math.floor(Math.random()*2) % 2 == 0 ? elem.querySelector(".white-logo").setAttribute("src","MEDIA/LogoWhiteOffright.svg") : elem.querySelector(".white-logo").setAttribute("src","MEDIA/LogoWhiteOffleft.svg");
+      elem.querySelector(".white-logo").dataset.state = 'hide';
+        Math.floor(Math.random()*2) % 2 == 0 ? elem.querySelector(".white-logo-offright").dataset.state = 'show' : elem.querySelector(".white-logo-offleft").dataset.state = 'show';
     } else{
-        elem.querySelector(".white-logo").setAttribute("src","MEDIA/LogoWhite.svg");
+      elem.querySelector(".white-logo-offleft").dataset.state = 'hide';
+      elem.querySelector(".white-logo-offright").dataset.state = 'hide';
+        elem.querySelector(".white-logo").dataset.state = 'show';
     }
 
     modScale(elem.querySelector(".white-logo"),50,1.25);
