@@ -3,3 +3,8 @@
     font-weight: 800;
     src: url('../FONTS/rigeko.woff');
 }
+
+@font-face{
+  font-family: Matao;
+  src: url(../FONTS/Matao_Serif.otf);
+}

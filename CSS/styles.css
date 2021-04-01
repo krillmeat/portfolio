@@ -357,7 +357,7 @@ section.hero .hero-logo{
     width: 100%; 
       max-width: 1450px;
     margin: 0 auto;
-      margin-top: -10vw;
+      margin-top: -6vw;
 }
 
 section.hero .hero-logo img{
@@ -922,8 +922,7 @@ body[data-status='project-view'] #projects .project-process .process .left{
   font-size: 1.5em;
 }
 
-#projects .project-process .right .code-block[data-type='css']::before{
-  content: 'CSS';
+#projects .project-process .right .code-block::before{
   position: absolute;
   top: 0px;
   left: 0px;
@@ -933,6 +932,9 @@ body[data-status='project-view'] #projects .project-process .process .left{
   padding: 4px 8px;
 }
 
+#projects .project-process .right .code-block[data-type='html']::before{ content: 'HTML' }
+#projects .project-process .right .code-block[data-type='css']::before{ content: 'CSS' }
+#projects .project-process .right .code-block[data-type='javascript']::before{ content: 'Javascript' }
 
 /* WORK SPECIFIC */
 #projects .project-process .right .rubik{
@@ -976,6 +978,51 @@ body[data-status='project-view'] #projects .project-process .process .left{
 
 #projects .project-process .process[value='absorb'] ul.color-swatches li:first-of-type .color-block{ background: #060606 }
 #projects .project-process .process[value='absorb'] ul.color-swatches li:nth-of-type(2) .color-block{ background: #D9D8D3 }
+
+#projects .project-process .process[value='servello'] ul.color-swatches li:first-of-type .color-block{ background: #6B705C }
+#projects .project-process .process[value='servello'] ul.color-swatches li:nth-of-type(2) .color-block{ background: #A5A58D }
+#projects .project-process .process[value='servello'] ul.color-swatches li:nth-of-type(3) .color-block{ background: #FFE8D6 }
+#projects .project-process .process[value='servello'] ul.color-swatches li:nth-of-type(4) .color-block{ background: #DDBEA9 }
+#projects .project-process .process[value='servello'] ul.color-swatches li:last-of-type .color-block{ background: #CB997E }
+
+#projects .project-process .process[value='servello'] .img-wrapper.packaging{
+  display: flex;
+    justify-content: space-between;
+    flex-wrap: wrap;
+  width: calc(100% - 32px);
+  margin-top: 16px;
+}
+
+#projects .project-process .process[value='servello'] .img-wrapper.packaging img{
+  width: calc(50% - 8px);
+    margin: 4px;
+  }
+
+#projects .project-process .right .matao{
+  font-family: 'Matao', sans-serif;
+  font-variant-ligatures: none;
+  font-size: 8em;
+}
+
+#projects .project-process .right h4.type + p::before{
+  position: absolute;
+  content: '';
+  top: -8px;
+  left: -16px;
+  width: 75%;
+  height: calc(100% + .65em);
+  border: 1px solid #FFF;
+}
+
+#projects .project-process .right img.application-img{ width: calc(100% - 32px)}
+
+#projects .project-process .right .montserrat{
+  font-family: 'Montserrat', sans-serif;
+  font-size: 3.25em;
+  margin-top: -16px;
+  margin-bottom: 32px;
+  padding-bottom: 16px;
+}
 
 @media (min-width: 800px ){
   #projects .project-process .process .right{

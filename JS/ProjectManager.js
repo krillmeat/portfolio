@@ -40,6 +40,7 @@ class ProjectManager{
     * --------------------------------------------------------------------------------*/
     switchToProject(projectName){
         console.log("Switch to Project : ",projectName);
+        document.activeElement.blur();
         if(this.status == "main"){
             this.status = "project";
             let currentProject = document.querySelector(`.project-process .process[value='${projectName}']`);
