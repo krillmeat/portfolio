@@ -9,6 +9,7 @@
         <link href="https://fonts.googleapis.com/css2?family=Rubik:wght@500;900&display=swap" rel="stylesheet">
         <link href="https://fonts.googleapis.com/css2?family=Share+Tech+Mono&display=swap" rel="stylesheet">
         <link href="https://fonts.googleapis.com/css2?family=Montserrat&display=swap" rel="stylesheet">
+        <link href="https://fonts.googleapis.com/css2?family=Quicksand&display=swap" rel="stylesheet">
 
         <link rel="stylesheet" href="CSS/fonts.css?v1">
         <link rel="stylesheet" href="CSS/animations.css?v1">
@@ -286,7 +287,7 @@
                                       <img src='MEDIA/WORK/SERVELLO/Servello-Wireframe-Two.svg'/>
                                       <img src='MEDIA/WORK/SERVELLO/Servello-Wireframe-Three.svg'/>
                                     </div>
-                                    <h4>Website Screens</h4>
+                                    <h4>Website Screenshots</h4>
                                     <div class='screenshot-wrap'>
                                       <img class='mobile' src='MEDIA/PROJECTS/SERVELLO/Mobile-Screen-One.png'/>
                                       <img class='mobile' src='MEDIA/PROJECTS/SERVELLO/Mobile-Screen-Two.png'/>
@@ -359,12 +360,82 @@
                                     <p>Lorem ipsum dolor sit amet, consectetur adipiscing elit. Vivamus vel eros purus. Morbi tristique leo quis enim suscipit, non gravida est eleifend. Duis auctor orci et dictum fermentum. Aliquam at nibh at massa sagittis placerat eu commodo ante. Integer gravida fringilla nibh, vel gravida lorem condimentum hendrerit. Mauris scelerisque, turpis in vestibulum egestas, massa eros mattis quam.</p>
                                     <h4>Application</h4>
                                     <h4>Illustration</h4>
-                                    <p>Lorem ipsum dolor sit amet consectetur adipisicing elit. Quisquam aspernatur aliquid mollitia illum, quas expedita doloribus ipsam nihil qui iure explicabo nam natus, debitis saepe distinctio molestias animi nostrum officiis?</p>
-                                    <h4>Wireframes</h4>
+                                    <div class='screenshot-wrap'>
+                                      <img class='dekstop' src='MEDIA/PROJECTS/CULLUMS/Cullums-Illustrations.png'/>
+                                    </div>
+                                    <h4>Website Screenshots</h4>
+                                    <div class='screenshot-wrap'>
+                                      <img class='mobile' src='MEDIA/PROJECTS/CULLUMS/Cullums-Mobile-Screen-One.png'/>
+                                      <img class='mobile' src='MEDIA/PROJECTS/CULLUMS/Cullums-Mobile-Screen-Two.png'/>
+                                      <img class='mobile' src='MEDIA/PROJECTS/CULLUMS/Cullums-Mobile-Screen-Three.png'/>
+                                      <img class='desktop' src='MEDIA/PROJECTS/CULLUMS/Cullums-Desktop-Screen-Two.png'/>
+                                      <img class='desktop' src='MEDIA/PROJECTS/CULLUMS/Cullums-Desktop-Screen-One.png'/>
+                                    </div>
                                     <h4>Code</h4>
-                                    <p>Lorem ipsum dolor sit amet consectetur adipisicing elit. Laboriosam nulla, reprehenderit reiciendis in atque quia, possimus harum quo nostrum deserunt laborum vel voluptate! Vitae animi dignissimos est atque, quaerat dolorum?</p>
+                                    <p>While there's nothing apparently flashy about this webpage, there is a lot of code going into one particular part of the page: the menu. Because I wanted things to stay in order, mobile or desktop, and I didn't know how tall things would be, and because CSS is bad, I had to do some special JS to make a masonry effect.</p>
                                     <div class='code-block' data-type='javascript'>
-                                      &lt;Code goes here&gt;
+                                      class GRID_MASONRY{
+                                        constructor(elem){
+                                          this.elem = elem;
+                                          this.subsectionElems = this.elem.querySelectorAll(".sub-section")
+                                          this.subsectionArray = this.buildSubsectionArray();
+                                      
+                                          if(debug) debug.log("Initializing Grid Masonry...");
+                                      
+                                          if(window.innerWidth >= 900){
+                                            this.calculateHeights(this.subsectionArray);
+                                            this.calculateTops(this.subsectionArray);
+                                          }
+                                      
+                                          // window.addEventListener("resize", this.resizeHandle.bind(this));
+                                        }
+                                      
+                                        buildSubsectionArray(){
+                                          let obj = this;
+                                          let array = [];
+                                      
+                                          for(let i = 0; i &lt; obj.subsectionElems.length; i++){
+                                            array.push(obj.subsectionElems[i]);
+                                          }
+                                          return array;
+                                        }
+                                      
+                                        calculateHeights(array){
+                                          for(let sub of array){
+                                            let subHeight = sub.querySelector("div").offsetHeight;
+                                            let rowCount = Math.ceil(subHeight / 24) + 1;
+                                            console.log("Sub Height = "+subHeight+" / 16 = "+rowCount);
+                                            sub.style.gridRowEnd = "span "+rowCount;
+                                          }
+                                        }
+                                      
+                                        calculateTops(array){
+                                          let obj = this;
+                                          let leftArray = obj.elem.querySelectorAll(".left");
+                                          let leftCurrTotal = 1;
+                                          for(let sub of leftArray){
+                                            sub.style.gridRowStart = leftCurrTotal;
+                                            leftCurrTotal += Math.ceil(sub.querySelector("div").offsetHeight / 24 ) + 1; 
+                                          }
+                                      
+                                          let rightArray = obj.elem.querySelectorAll(".right");
+                                          let rightCurrTotal = 1;
+                                          for(let sub of rightArray){
+                                            sub.style.gridRowStart = rightCurrTotal;
+                                            rightCurrTotal += Math.ceil(sub.querySelector("div").offsetHeight / 24 ) + 1; 
+                                          }
+                                        }
+                                      
+                                        resizeHandle(e){
+                                          if(window.innerHeight >= 900){
+                                      
+                                          } else{
+                                      
+                                          }
+                                          this.calculateHeights(this.subsectionArray);
+                                          this.calculateTops(this.subsectionArray);
+                                        }
+                                      }
                                     </div>
                                 </div>
                             </div>

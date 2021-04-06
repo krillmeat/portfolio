@@ -1054,6 +1054,15 @@ body[data-status='project-view'] #projects .project-process .process .left{
 #projects .project-process .right .screenshot-wrap img.desktop{ width: 100% }
 
 #projects .project-process .right .screenshot-wrap img{ margin: 4px }
+#projects .project-process .right .screenshot-wrap img.mobile:last-of-type{ margin-right: 0}
+
+#projects .project-process .right h4.type + .rigeko{ font-size: 8em }
+#projects .project-process .right h4.type + .rigeko::before{ height: calc(100% + .9em)}
+#projects .project-process .right h4.type + .rigeko + .quicksand{ 
+  font-size: 4em;
+  margin-top: -8px;
+  margin-bottom: 48px;
+}
 
 @media (min-width: 800px ){
   #projects .project-process .process .right{
