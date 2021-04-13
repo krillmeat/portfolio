@@ -792,6 +792,10 @@ body[data-status='project-view'] #projects .project-process .process .left{
     width: 80%;
     margin-left: 20%;
   }
+
+  #projects .project-process .process .left ul a.website{
+    font-size: 2em;
+  }
 }
 
 /*:::::::::::::::::::::::::::::::::::::::::::::::::::::::::::::::::::::::::::::::::::::::::::::::::::::::::::::::

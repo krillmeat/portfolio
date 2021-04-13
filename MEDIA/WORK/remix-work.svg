@@ -1,102 +1,45 @@
 <?xml version="1.0" encoding="utf-8"?>
-<!-- Generator: Adobe Illustrator 25.1.0, SVG Export Plug-In . SVG Version: 6.00 Build 0)  -->
+<!-- Generator: Adobe Illustrator 25.2.1, SVG Export Plug-In . SVG Version: 6.00 Build 0)  -->
 <svg version="1.1" id="Layer_1" xmlns="http://www.w3.org/2000/svg" xmlns:xlink="http://www.w3.org/1999/xlink" x="0px" y="0px"
-	 viewBox="0 0 400 400" style="enable-background:new 0 0 400 400;" xml:space="preserve">
+	 viewBox="0 0 100 100" style="enable-background:new 0 0 100 100;" xml:space="preserve">
 <style type="text/css">
-	.st0{clip-path:url(#SVGID_2_);}
-	.st1{enable-background:new    ;}
-	.st2{fill:#FFFFFF;}
-	.st3{fill:none;stroke:#FFFFFF;}
-	.st4{clip-path:url(#SVGID_4_);}
-	.st5{clip-path:url(#SVGID_6_);}
+	.st0{fill:#FFFFFF;}
+	.st1{fill:none;stroke:#FFFFFF;stroke-miterlimit:10;}
 </style>
 <g>
 	<g>
-		<defs>
-			<rect id="SVGID_1_" x="25.8" y="132.5" width="135.2" height="135.2"/>
-		</defs>
-		<clipPath id="SVGID_2_">
-			<use xlink:href="#SVGID_1_"  style="overflow:visible;"/>
-		</clipPath>
-		<g transform="matrix(1 0 0 1 1.907349e-06 0)" class="st0">
-			
-				<image style="overflow:visible;enable-background:new    ;" width="255" height="253" xlink:href="2932DB6A.jpg"  transform="matrix(0.5324 0 0 0.5324 25.5402 132.7926)">
-			</image>
-		</g>
+		<path class="st0" d="M19.4,13.6h3.2v15.1h-3.2V13.6z"/>
 	</g>
-</g>
-<g class="st1">
-	<path class="st2" d="M74.9,62.2h20.5c5.9-0.1,11.9-0.1,16.2,3.6c3.3,2.9,4.7,6.8,4.7,10.3c0,10-8.6,12.4-11.2,13.1
-		c8.1,0.7,8.7,5.3,9.6,12.3c0.8,6.3,1.3,8.9,1.6,10.4c0.6,2.4,1,3,1.6,3.9h-12.7c-0.5-3-2.1-16.5-2.9-18.6c-1-3-3.9-3-5.8-3H86.6
-		v21.6H74.9V62.2z M86.2,85.6h9.3c1.3,0,4,0,5.9-1.5c0.8-0.6,3-2.4,3-6.2c0-3.6-1.8-5.3-2.8-6c-1.8-1.3-3.9-1.3-7.6-1.3h-7.7V85.6z"
-		/>
-</g>
-<g class="st1">
-	<path class="st2" d="M202.4,72.7v15.4h1.2c3.8,0,6-2.1,6.6-6.4h1.8v14.9h-1.8c-0.3-4.4-2.5-6.7-6.6-6.7h-1.2v15.7h6.2
-		c5.5,0,9.1-3.4,10.7-10.2h1.9l-0.8,11.9h-31.6v-1.8h4.6V72.7h-4.6v-1.8h30.5l0.5,10.1h-1.8c-1.1-3.4-2.6-5.7-4.3-6.8
-		c-1.7-1.1-3.9-1.6-6.7-1.6H202.4z"/>
-</g>
-<g class="st1">
-	<path class="st2" d="M315.8,323.9h-2.1c-0.3-2.9-0.5-5.4-0.5-7.3c0-2.1,0.4-4.2,1.2-6.2s2.7-4.1,5.7-6.4c3-2.3,4.5-4.4,4.5-6.4
-		c0-1.9-0.7-3.5-2.2-4.8c-1.5-1.3-3.4-1.9-5.8-1.9c-2.1,0-3.9,0.5-5.4,1.4c-1.5,0.9-2.3,1.7-2.3,2.5c0,0.4,0.3,0.7,0.8,0.7
-		c3.1,0.2,4.7,1.7,4.7,4.4c0,1.4-0.5,2.5-1.4,3.5c-1,1-2.2,1.4-3.6,1.4c-1.4,0-2.7-0.5-3.7-1.6c-1.1-1.1-1.6-2.5-1.6-4.2
-		c0-2.9,1.3-5.3,3.8-7.3c2.5-2,5.6-3,9.2-3c4,0,7.4,1.3,10.1,4s4,6,4,10.1c0,2.4-0.6,4.7-1.8,6.9s-3.9,4.7-8.1,7.5
-		C317.5,319.6,315.7,321.8,315.8,323.9z M309.3,333c0-1.6,0.6-3,1.7-4.1c1.1-1.1,2.5-1.7,4.1-1.7s2.9,0.6,4.1,1.7
-		c1.1,1.1,1.7,2.5,1.7,4.1c0,1.6-0.6,2.9-1.7,4c-1.1,1.1-2.5,1.7-4.1,1.7s-3-0.6-4.1-1.7C309.8,335.9,309.3,334.5,309.3,333z"/>
-</g>
-<g class="st1">
-	<path class="st2" d="M160.5,160.2h28.1l17,58.4l18.3-58.4h27.3v80.3h-17.1v-68.9l-21.9,68.9h-14.2l-21.4-68.9v68.9h-16.1V160.2z"/>
-</g>
-<g class="st1">
-	<path class="st2" d="M311.4,180.1h8.6v40.3h-8.6V180.1z"/>
-</g>
-<g class="st1">
-	<path class="st2" d="M210.7,306.6l20.6,34.4h4.9v2.9h-30V341h8.2l-12.8-21.4l-11.2,15.5c-1.7,2.3-2.5,3.9-2.5,4.8
-		c0,0.8,1.2,1.2,3.5,1.2h4v2.9h-19.8V341h1.7c2.4,0,4-0.3,4.9-0.8c0.8-0.5,2.1-1.9,3.8-4.2l14-19.5l-18-30.3h-6.2v-2.9h29.4v2.9
-		h-6.4l10.5,17.5l9.3-13c1.1-1.6,1.7-2.6,1.7-3.2c0-0.9-1-1.3-3.1-1.3h-4.6v-2.9h20.2v2.9h-3.5c-1.7,0-2.8,0.2-3.6,0.7
-		c-0.7,0.4-1.9,1.7-3.4,3.9L210.7,306.6z"/>
-</g>
-<rect x="36.9" y="31.7" class="st3" width="111.8" height="111.8"/>
-<polyline class="st3" points="36.9,144.3 36.9,256 148.7,256 148.7,144.3 "/>
-<polyline class="st3" points="36.9,256.8 36.9,368.5 148.7,368.5 148.7,256.8 "/>
-<polyline class="st3" points="149.4,143.5 261.2,143.5 261.2,31.7 149.4,31.7 "/>
-<polyline class="st3" points="149.4,256 261.2,256 261.2,144.3 "/>
-<polyline class="st3" points="149.4,368.5 261.2,368.5 261.2,256.8 "/>
-<polyline class="st3" points="262,143.5 373.7,143.5 373.7,31.7 262,31.7 "/>
-<polyline class="st3" points="262,256 373.7,256 373.7,144.3 "/>
-<polyline class="st3" points="262,368.5 373.7,368.5 373.7,256.8 "/>
-<path class="st3" d="M149.4,144.3"/>
-<path class="st3" d="M149.4,256.8"/>
-<path class="st3" d="M262,144.3"/>
-<path class="st3" d="M262,256.8"/>
-<g>
 	<g>
-		<defs>
-			<rect id="SVGID_3_" x="281.1" y="51" width="75.7" height="75.7"/>
-		</defs>
-		<clipPath id="SVGID_4_">
-			<use xlink:href="#SVGID_3_"  style="overflow:visible;"/>
-		</clipPath>
-		<g transform="matrix(1 0 0 1 0 0)" class="st4">
-			
-				<image style="overflow:visible;enable-background:new    ;" width="211" height="214" xlink:href="2932DB6E.jpg"  transform="matrix(0.3563 0 0 0.3563 281.3784 50.7148)">
-			</image>
-		</g>
+		<path class="st0" d="M47.9,17.4l1.7,5.3l1.7-5.3h3.6v0.4h-1.2v8.2h1.2v0.4h-4.6v-0.4h1.2v-7.7l-2.6,8.2h-0.3l-2.7-8.3v6.9
+			c0,0.4,0,0.6,0.1,0.7c0.1,0.1,0.4,0.2,0.8,0.2h0.3v0.4h-3v-0.4h0.6c0.4,0,0.6-0.1,0.6-0.2c0.1-0.1,0.1-0.4,0.1-0.7v-7.3h-1.3v-0.4
+			H47.9z"/>
 	</g>
-</g>
-<g>
 	<g>
-		<defs>
-			<rect id="SVGID_5_" x="72.4" y="292.2" width="42" height="42"/>
-		</defs>
-		<clipPath id="SVGID_6_">
-			<use xlink:href="#SVGID_5_"  style="overflow:visible;"/>
-		</clipPath>
-		<g class="st5">
-			
-				<image style="overflow:visible;enable-background:new    ;" width="119" height="119" xlink:href="2932DB69.jpg"  transform="matrix(0.3527 0 0 0.3527 72.4347 292.2399)">
-			</image>
+		<path class="st0" d="M43.6,39.1h6.8c3.2,0,5.8,0.2,7.6,2.4c1.2,1.4,1.3,3,1.3,4.1c0,2.5-1.1,4.7-2.8,5.8c-1.6,1-3.8,1-5,1h-3.2V61
+			h-4.8V39.1z M48.2,49h1.9c1.5,0,4.3,0,4.3-3.3c0-3-2.5-3-3.9-3h-2.4V49z"/>
+	</g>
+	<g>
+		<path class="st0" d="M80.2,44.8l3.5,10h-2.2l-0.7-2.2h-4l-0.7,2.2H74l3.6-10H80.2z M80.2,51l-1.4-4.3L77.4,51H80.2z"/>
+	</g>
+	<g>
+		<path class="st0" d="M54.3,71.5l0.1,3.8h-0.7c-0.6-2.3-1.7-3.5-3.4-3.5c-0.7,0-1.3,0.3-1.6,1c-0.3,0.6-0.5,1.9-0.5,3.9
+			c0,3.7,0.1,5.9,0.3,6.6c0.2,0.7,0.8,1.1,1.6,1.1c1.7,0,2.9-1.2,3.7-3.6h0.7L54.4,85h-0.7c-0.2-0.3-0.5-0.6-0.8-0.9
+			c-0.9,0.7-1.9,1.1-3,1.1c-1.4,0-2.7-0.6-3.8-1.8c-1.1-1.2-1.7-2.9-1.7-5c0-2.1,0.6-3.8,1.7-5.1c1.1-1.3,2.5-2,4.1-2
+			c1,0,1.9,0.3,2.7,1c0.3-0.2,0.5-0.4,0.8-0.6H54.3z"/>
+	</g>
+	<g>
+		<path class="st0" d="M75,74.1h7.5l0.1,3h-0.4c-0.3-1.7-1-2.5-2.1-2.5h-0.2v8.2h1.4v0.4h-5v-0.4h1.4v-8.2h-0.2
+			c-1.1,0-1.7,0.8-2.1,2.5H75L75,74.1z"/>
+	</g>
+	<g>
+		<g>
+			<path class="st0" d="M92.4,7.7v84.7H7.8V7.7H92.4 M93.4,6.7H6.8v86.7h86.7V6.7L93.4,6.7z"/>
 		</g>
+		<line class="st1" x1="6.8" y1="35.5" x2="93.2" y2="35.5"/>
+		<line class="st1" x1="6.8" y1="64.2" x2="93.2" y2="64.2"/>
+		<line class="st1" x1="64.6" y1="6.6" x2="64.6" y2="93.3"/>
+		<line class="st1" x1="35.8" y1="6.6" x2="35.8" y2="93.3"/>
 	</g>
 </g>
 </svg>
