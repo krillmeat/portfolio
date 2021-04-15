@@ -602,6 +602,7 @@ body[data-status='project-view'] #projects .carousel-content{
 #projects ul.projects-list li[data-value='remix'] button:hover::after{ content: 'Impact' }
 #projects ul.projects-list li[data-value='servello'] button:hover::after{ content: 'Servello' }
 #projects ul.projects-list li[data-value='attagirl'] button:hover::after{ content: 'Attagirl' }
+#projects ul.projects-list li[data-value='outlaw'] button:hover::after{ content: 'Outlaw Stitches' }
 
 #projects ul.projects-list li img{
     width: 100%;
@@ -950,12 +951,16 @@ body[data-status='project-view'] #projects .project-process .process .left{
 
 #projects .code-block p.code-line{ 
   margin-top: 0px;
-  margin-bottom: 4px;
+  margin-bottom: 8px;
   font-size: .75rem ;
 }
+#projects .code-block p.code-line:last-of-type{ margin-bottom: 0 }
 #projects .code-block p.code-line.empty{height: 8px}
 #projects .code-block p.code-line.i1{padding-left: 16px}
 #projects .code-block p.code-line.i2{padding-left: 32px}
+#projects .code-block p.code-line.i3{padding-left: 48px}
+#projects .code-block p.code-line.i4{padding-left: 64px}
+
 /* WORK SPECIFIC */
 #projects .project-process .right .rubik{
   position: relative;
