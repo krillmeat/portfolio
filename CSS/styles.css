@@ -1073,6 +1073,23 @@ body[data-status='project-view'] #projects .project-process .process .left{
   margin-bottom: 48px;
 }
 
+#projects .project-process .right h4 + .img-row{ margin-top: 32px }
+
+#projects .project-process .right .img-row{
+  display: flex;
+  max-width: 800px;
+  margin-bottom: 12px;
+}
+
+#projects .project-process .right .img-row .full{ width: 100%; }
+#projects .project-process .right .img-row .full.type-spec{ max-width: 600px; }
+
+#projects .project-process .right .img-row .third{
+  width: calc(33.33% - 8px);
+  margin-right: 12px;
+}
+#projects .project-process .right .img-row .third:last-of-type{ margin-right: 0 }
+
 @media (min-width: 800px ){
   #projects .project-process .process .right{
      width: 70%;
