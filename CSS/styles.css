@@ -492,6 +492,8 @@ section.split .left{
     width: 100%;
     height: 500px;
     border: 1px solid #FFF;
+
+    background: url(../MEDIA/me.png);
 }
 
 #about h2::before{
@@ -630,7 +632,7 @@ body[data-status='project-view'] #projects .carousel-content{
 ::::::::::::::::::::                                                                         ::::::::::::::::::::
 :::::::::::::::::::::::::::::::::::::::::::::::::::::::::::::::::::::::::::::::::::::::::::::::::::::::::::::::*/
 
-#projects .project-process{ padding-top: 64px }
+#projects .project-process{ padding-top: 64px; height: 0px }
 body[data-status='project-view'] #projects .project-process{ padding-top: 0px }
 
 #projects .project-process .process{
@@ -1004,6 +1006,11 @@ body[data-status='project-view'] #projects .project-process .process .left{
 #projects .project-process .process[value='absorb'] ul.color-swatches li:first-of-type .color-block{ background: #060606 }
 #projects .project-process .process[value='absorb'] ul.color-swatches li:nth-of-type(2) .color-block{ background: #D9D8D3 }
 
+#projects .project-process .process[value='remix'] ul.color-swatches li:first-of-type .color-block{ background: #FFF }
+#projects .project-process .process[value='remix'] ul.color-swatches li:nth-of-type(2) .color-block{ background: #000 }
+#projects .project-process .process[value='remix'] ul.color-swatches li:nth-of-type(3) .color-block{ background: #FFA20F }
+#projects .project-process .process[value='remix'] ul.color-swatches li:nth-of-type(4) .color-block{ background: #72ECFC }
+
 #projects .project-process .process[value='servello'] ul.color-swatches li:first-of-type .color-block{ background: #6B705C }
 #projects .project-process .process[value='servello'] ul.color-swatches li:nth-of-type(2) .color-block{ background: #A5A58D }
 #projects .project-process .process[value='servello'] ul.color-swatches li:nth-of-type(3) .color-block{ background: #FFE8D6 }
@@ -1096,6 +1103,8 @@ body[data-status='project-view'] #projects .project-process .process .left{
   margin-right: 12px;
 }
 #projects .project-process .right .img-row .third:last-of-type{ margin-right: 0 }
+
+#projects .project-process .right .img-row .two-third{ width: calc(66.66% - 8px)}
 
 @media (min-width: 800px ){
   #projects .project-process .process .right{
