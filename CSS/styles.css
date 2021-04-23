@@ -494,6 +494,7 @@ section.split .left{
     border: 1px solid #FFF;
 
     background: url(../MEDIA/me.png);
+      background-position: top center;
 }
 
 #about h2::before{

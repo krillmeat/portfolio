@@ -118,16 +118,17 @@
                                     <a class='website' href='https://rossdanielconover.com/KRILL_MEAT' target='_blank'>Visit Website</a>
                                   </div>
                                   <h3>KRILL MEAT</h3>
+                                  <a class='website' href='https://rossdanielconover.com/KRILL_MEAT/' target="_blank">View the Website</a>
                                   <p>Krill Meat is a personal brand I have been building over the past few years. I have been doodling in the margins for years, gathering sketchbooks, notepads, and lots of post its. When coworkers started asking for the illustrations I had on my desk, I decided to move forward with the idea of promoting, branding, and selling my work.</p>
                                   <p>Krill Meat embodies funny, simple, sometimes jarring, often uncomfortable, consistently messy illustrations. I wanted to make sure the website worked not only as an online store, but also a portfolio to showcase my work, so the art is front-and-center.</p>
                                   <h4>Illustration</h4>
                                   <div class='img-row'>
-                                    <img class='half' src='MEDIA/placeholder-full.svg' />
-                                    <img class='half' src='MEDIA/WORK/KRILLMEAT/krillmeat-worm-shirt.png' />
+                                    <img class='half' src='MEDIA/WORK/KRILLMEAT/krillmeat-illustration.png' />
+                                    <img class='half' src='MEDIA/WORK/KRILLMEAT/worm-illustration.png' />
                                   </div>
                                   <div class='img-row'>
-                                    <img class='half' src='MEDIA/placeholder-full.svg' />
-                                    <img class='half' src='MEDIA/placeholder-full.svg' />
+                                    <img class='half' src='MEDIA/WORK/KRILLMEAT/sunshine-illustration.png' />
+                                    <img class='half' src='MEDIA/WORK/KRILLMEAT/smile-illustration.png' />
                                   </div>
                                   <h4>Products</h4>
                                   <div class='img-row'>
@@ -135,34 +136,27 @@
                                     <img class='half' src='MEDIA/WORK/KRILLMEAT/krillmeat-worm-shirt.png' />
                                   </div>
                                   <div class='img-row'>
-                                    <img class='half' src='MEDIA/placeholder-full.svg' />
+                                    <img class='half' src='MEDIA/WORK/KRILLMEAT/krillmeat-smile-pin.jpg' />
                                     <img class='half' src='MEDIA/WORK/KRILLMEAT/krillmeat-sunshine-poster.png' />
                                   </div>
                                   <h4>Wireframes</h4>
-                                  <div class='img-row'>
-                                    <img class='third' src='MEDIA/placeholder-full.svg' />
-                                    <img class='third' src='MEDIA/placeholder-full.svg' />
-                                    <img class='third' src='MEDIA/placeholder-full.svg' />
-                                  </div>
-                                  <div class='img-row'>
-                                    <img class='third' src='MEDIA/placeholder-full.svg' />
-                                    <img class='third' src='MEDIA/placeholder-full.svg' />
-                                    <img class='third' src='MEDIA/placeholder-full.svg' />
-                                  </div>
-                                  <div class='img-row'><img class='full' src='MEDIA/placeholder-full.svg' /></div>
-                                  <div class='img-row'><img class='full' src='MEDIA/placeholder-full.svg' /></div>
+                                  <div class='img-row'><img class='full' src='MEDIA/WORK/KRILLMEAT/krillmeat-wireframes.png' /></div>
                                   <h4>Website Screens</h4>
                                   <div class='img-row'>
-                                    <img class='third' src='MEDIA/placeholder-full.svg' />
-                                    <img class='third' src='MEDIA/placeholder-full.svg' />
-                                    <img class='third' src='MEDIA/placeholder-full.svg' />
+                                    <img class='third' src='MEDIA/WORK/KRILLMEAT/web-screen-mobile-one.jpg' />
+                                    <img class='third' src='MEDIA/WORK/KRILLMEAT/web-screen-mobile-two.jpg' />
+                                    <img class='third' src='MEDIA/WORK/KRILLMEAT/web-screen-mobile-three.jpg' />
                                   </div>
-                                  <div class='img-row'><img class='full' src='MEDIA/placeholder-full.svg' /></div>
-                                  <div class='img-row'><img class='full' src='MEDIA/placeholder-full.svg' /></div>
-                                  <h4>Social Media</h4>
+                                  <div class='img-row'><img class='full' src='MEDIA/WORK/KRILLMEAT/web-screen-desktop-one.jpg' /></div>
+                                  <div class='img-row'><img class='full' src='MEDIA/WORK/KRILLMEAT/web-screen-desktop-two.jpg' /></div>
+                                  <div class='img-row'><img class='full' src='MEDIA/WORK/KRILLMEAT/web-screen-desktop-three.jpg' /></div>
                                   <h4>Code</h4>
                                   <p>For this site, I wanted to use some kind of subtle animation technique to create a sense of unease with the illustrations. To do that, I needed to keep all of the SVG files seperated and inline, so I could manipulate various pieces. To do this without cluttering up the HTML, I pulled all of the svg data into a JS object as Strings, and used JS to inject them into the page. From there, it's simple CSS Animations to create the effects.</p>
                                   <p>Beyond the SVG management, I also wanted to include a simple swiping carousel on mobile. I built a custom JS plugin that integrated with the overall page manager to control the effect on mobile.</p>
+                                  <a class='website' href='https://rossdanielconover.com/KRILL_MEAT/' target="_blank">See it Work on the Site</a>
+                                  <div class='code-block' data-type='javscript'>
+                                    <p class='code-line i0'>/**</p><p class='code-line i1'> * TOUCH START HANDLE</p><p class='code-line i1'> * ----------------------------------------------------------------------</p><p class='code-line i1'> * Handles the effects of the Touch Start Event</p><p class='code-line i1'> * ----------------------------------------------------------------------</p><p class='code-line i1'> * @param {Event} e Event object </p><p class='code-line i1'> * ----------------------------------------------------------------------</p><p class='code-line i1'> */</p><p class='code-line i1'>touchStartHandle(e){</p><p class='code-line i2'>debug?.debugLog("EVENT [touchstart] :: Start point = "+e.touches[0].clientX+" , "+e.touches[0].clientY);</p><p class='code-line i2'></p><p class='code-line i2'>this.moveDelta = [0,0];</p><p class='code-line i2'>this.startCoordinates = [e.touches[0].clientX,e.touches[0].clientY];</p><p class='code-line i1'>}</p><p class='code-line i0'></p><p class='code-line i1'>/**</p><p class='code-line i1'> * TOUCH MOVE HANDLE</p><p class='code-line i1'> * ----------------------------------------------------------------------</p><p class='code-line i1'> * Handles the effects of the Touch Move Event</p><p class='code-line i1'> * ----------------------------------------------------------------------</p><p class='code-line i1'> * @param {Event} e Event object </p><p class='code-line i1'> * ----------------------------------------------------------------------</p><p class='code-line i1'> */</p><p class='code-line i1'>touchMoveHandle(e){</p><p class='code-line i2'>this.moveHappened = true; // While true, a moving has happened (prevents a Click from counting as a Move on second interaction)</p><p class='code-line i0'></p><p class='code-line i2'>// Get the current coordinates and set the Deltas based on difference to Start Points</p><p class='code-line i2'>this.currCoordinates = [e.touches[0].clientX , e.touches[0].clientY];</p><p class='code-line i2'>this.moveDelta = this.calculateDelta(this.startCoordinates, this.currCoordinates);</p><p class='code-line i2'></p><p class='code-line i2'>// If the Delta is past a certain point, animate the Slide Elem slightly for visual feedback</p><p class='code-line i2'>// TODO - Allow for more varieties of effect, not just subtle slide</p><p class='code-line i2'>if(Math.abs(this.moveDelta[0]) >= 20) this.slide(this.moveDelta);</p><p class='code-line i1'>}</p><p class='code-line i0'></p><p class='code-line i1'>/**</p><p class='code-line i1'> * TOUCH END HANDLE</p><p class='code-line i1'> * ----------------------------------------------------------------------</p><p class='code-line i1'> * Handles the effects of the Touch End Event</p><p class='code-line i1'> * ----------------------------------------------------------------------</p><p class='code-line i1'> * @param {Event} e Event object </p><p class='code-line i1'> * ----------------------------------------------------------------------</p><p class='code-line i1'> */</p><p class='code-line i1'>touchEndHandle(e){</p><p class='code-line i2'>debug?.debugLog("EVENT [touchend] :: Delta = "+this.moveDelta);</p><p class='code-line i0'></p><p class='code-line i2'>// If the Delta is past a certain number, check which direction from the start the end coordinates are, then send the direction to the Callback Function</p><p class='code-line i3'>if(this.moveHappened){// This check has to be here to prevent a "click" as counting as a move</p><p class='code-line i3'>if(Math.abs(this.moveDelta[0]) >= 50 ){ // The move window, how long it takes before it counts as a "swipe" | TODO - Set this value through Param</p><p class='code-line i4'>if(this.moveDelta[0] > 0){</p><p class='code-line i5'>this.effectCallback({direction: 'left'});</p><p class='code-line i4'>} else{</p><p class='code-line i5'>this.effectCallback({direction: 'right'});</p><p class='code-line i4'>}</p><p class='code-line i3'>} else{ // If you don't meet the delta requirement to trigger the event, just send no direction to the callback</p><p class='code-line i4'>this.effectCallback({direction: 'none'});</p><p class='code-line i3'>}</p><p class='code-line i4'>this.moveHappened = false;// Reset the Move Happened check to prevent "Click swiping"</p><p class='code-line i2'>}</p><p class='code-line i1'>}</p><p class='code-line i0'></p><p class='code-line i1'>/**</p><p class='code-line i1'> * CALCULATE DELTA</p><p class='code-line i1'> * ----------------------------------------------------------------------</p><p class='code-line i1'> * Takes Start and End Coordinates and returns the differences between them</p><p class='code-line i1'> * ----------------------------------------------------------------------</p><p class='code-line i1'> * @param {Array} start The X and Y position at the start of the Touch Event</p><p class='code-line i2'> * @param {Array} end The X and Y position at the end of the Touch Event\</p><p class='code-line i1'> * @returns An Array of the Deltas between the Start and End points</p><p class='code-line i1'> * ----------------------------------------------------------------------</p><p class='code-line i1'> */</p><p class='code-line i1'>calculateDelta(start, end){</p><p class='code-line i2'>return [end[0] - start[0], end[1] - start[1]];</p><p class='code-line i1'>}</p><p class='code-line i0'></p><p class='code-line i1'>/**</p><p class='code-line i1'> * SLIDE</p><p class='code-line i1'> * ----------------------------------------------------------------------</p><p class='code-line i1'> * Allows the Slide Element to Slightly Move when dragging</p><p class='code-line i1'> * TODO - Allow Y movement as well</p><p class='code-line i1'> * ----------------------------------------------------------------------</p><p class='code-line i1'> * @param {Array} delta Array of Deltas between the Start and End points</p><p class='code-line i1'> * ----------------------------------------------------------------------</p><p class='code-line i1'> */</p><p class='code-line i1'>slide(delta){</p><p class='code-line i2'>if(Math.abs(delta[0]) <=50 )this.slideElem.style.transform = `translateX(${Math.ceil(delta[0]/2)}px)`;</p><p class='code-line i1'>}</p>
+                                  </div>
                                 </div>
                             </div>
 
